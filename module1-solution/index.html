@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="lunchApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="lunch-checker" ng-controller="LunchController">
+
+        <form>
+          <input type="text" class="form-control" placeholder="Enter list of comma separated items"
+            ng-model="lunchList" />
+          <input type="button" class="form-control" id="check-button" value="CHECK IF TOO MUCH" ng-click="checkLunchList()" />
+        </form>
+
+
+        <br />
+        <p> {{lunchMessage}} </p>
+        
+      </div>
+    </div>
+
+
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
